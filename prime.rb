@@ -1,6 +1,6 @@
 def prime?(num)
   return false if num < 0
-  range = (2..Math.sqrt(num)).to_a
+  range = (2..Math.sqrt(num).ceil).to_a
   range.each do |x|
     range.each do |y|
       product = x * y
