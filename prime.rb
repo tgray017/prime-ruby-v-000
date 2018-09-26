@@ -12,7 +12,7 @@ end
 puts Benchmark.measure {prime?(200)}
 
 
-def prime?_a(num)
+def prime_a?(num)
   return false if num < 0
   range = (2..(num/2)).to_a
   range.each do |x|
