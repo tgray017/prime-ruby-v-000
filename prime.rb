@@ -3,7 +3,6 @@ def prime?(num)
   range = (2..Math.sqrt(num).ceil).to_a
   range.each do |x|
     range.each do |y|
-      product = x * y
       return false if product == num
     end
   end
