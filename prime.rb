@@ -9,7 +9,7 @@ def prime?(num)
   return true
 end
 
-puts Benchmark.measure {prime?(200)}
+# results of puts Benchmark.measure {prime?(200)} for above method
 
 
 def prime_a?(num)
