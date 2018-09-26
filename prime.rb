@@ -12,3 +12,7 @@ def prime?(num)
   !(final_array.any? {|number| num == number})
   
 end
+
+
+
+
