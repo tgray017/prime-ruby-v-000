@@ -17,5 +17,5 @@ end
 puts Benchmark.measure {prime?(100)}
 
 # results of puts Benchmark.measure {prime?(100)}
-
+#  0.060000   0.000000   0.060000 (  0.055453)
 
