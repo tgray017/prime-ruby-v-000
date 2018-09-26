@@ -1,3 +1,5 @@
+require 'pry'
+
 def prime?(num)
   range = (2..(num/2)).to_a
 
@@ -9,7 +11,7 @@ def prime?(num)
   end
   
   !(final_array.any? {|number| num == number})
-  
+  binding.pry
 end
 
 
