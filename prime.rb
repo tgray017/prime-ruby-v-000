@@ -1,5 +1,3 @@
-require 'benchmark'
-
 def prime?(num)
   range = (2..(num/2)).to_a
   final_array = []
@@ -14,7 +12,7 @@ def prime?(num)
   !(final_array.any? {|number| num == number})
 end
 
-puts Benchmark.measure {prime?(200)}
+
 
 # results of puts Benchmark.measure {prime?(200)} for above method
 #  0.750000   0.010000   0.760000 (  0.764609)
