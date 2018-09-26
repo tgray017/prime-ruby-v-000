@@ -22,12 +22,12 @@ puts Benchmark.measure {prime?(100)}
 def prime?(num)
   range = (2..(num/2)).to_a
   range.each do |x|
-  range.each do |y|
-    product = x * y
-    unless final_array.any? {|z| z == product}
-      final_array << product
+    range.each do |y|
+      product = x * y
+      unless final_array.any? {|z| z == product}
+        final_array << product
+      end
     end
   end
-end
 end
 
