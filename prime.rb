@@ -17,7 +17,7 @@ end
 puts Benchmark.measure {prime?(200)}
 
 # results of puts Benchmark.measure {prime?(200)}
-#  0.060000   0.000000   0.060000 (  0.055453)
+#  0.750000   0.010000   0.760000 (  0.764609)
 
 def prime_a?(num)
   range = (2..(num/2)).to_a
