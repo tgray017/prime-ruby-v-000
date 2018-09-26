@@ -14,7 +14,7 @@ def prime?(num)
   !(final_array.any? {|number| num == number})
 end
 
-puts Benchmark.measure {prime?(1000)}
+puts Benchmark.measure {prime?(200)}
 
 # results of puts Benchmark.measure {prime?(1000)}
 #  0.060000   0.000000   0.060000 (  0.055453)
@@ -30,7 +30,7 @@ def prime_a?(num)
   return true
 end
 
-puts Benchmark.measure {prime_a?(1000)}
+puts Benchmark.measure {prime_a?(200)}
 
 # results of puts Benchmark.measure {prime?(1000)}
 #  0.000000   0.000000   0.000000 (  0.000019)
