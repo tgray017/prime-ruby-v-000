@@ -6,7 +6,10 @@ def prime?(num)
   final_array = []
   range.each do |x|
     range.each do |y|
-      final_array << x * y
+      product = x * y
+      unless final_array.any? {|z| z == product}
+        final_array << x * y
+      end
     end
   end
   
