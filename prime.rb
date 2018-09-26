@@ -1,3 +1,6 @@
+require 'benchmark'
+require 'bigdecimal/math'
+
 def prime?(num)
   range = (2..(num/2)).to_a
   final_array = []
