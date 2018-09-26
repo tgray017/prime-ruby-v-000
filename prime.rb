@@ -15,3 +15,7 @@ def prime?(num)
 end
 
 puts Benchmark.measure {prime?(100)}
+
+# results of puts Benchmark.measure {prime?(100)}
+
+
