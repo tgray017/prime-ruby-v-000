@@ -25,9 +25,9 @@ def prime?(num)
     range.each do |y|
       product = x * y
       if product == num
-        true
+        return true
       else
-        false
+        return false
       end
     end
   end
