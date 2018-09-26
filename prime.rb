@@ -11,7 +11,6 @@ def prime?(num)
   end
   
   !(final_array.any? {|number| num == number})
-  binding.pry
 end
 
 
