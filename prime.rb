@@ -1,3 +1,5 @@
+require 'Benchmark'
+
 def prime?(num)
   return false if num < 0
   range = (2..Math.sqrt(num).ceil).to_a
@@ -7,12 +9,10 @@ def prime?(num)
   return true
 end
 
+puts Benchmark.measure {prime?(200)}
 
 
-
-
-
-def prime?(num)
+def prime?_a(num)
   return false if num < 0
   range = (2..(num/2)).to_a
   range.each do |x|
