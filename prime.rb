@@ -16,7 +16,7 @@ end
 
 puts Benchmark.measure {prime?(200)}
 
-# results of puts Benchmark.measure {prime?(1000)}
+# results of puts Benchmark.measure {prime?(200)}
 #  0.060000   0.000000   0.060000 (  0.055453)
 
 def prime_a?(num)
@@ -32,5 +32,5 @@ end
 
 puts Benchmark.measure {prime_a?(200)}
 
-# results of puts Benchmark.measure {prime?(1000)}
+# results of puts Benchmark.measure {prime?(200)}
 #  0.000000   0.000000   0.000000 (  0.000019)
