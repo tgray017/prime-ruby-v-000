@@ -1,5 +1,4 @@
 require 'benchmark'
-require 'bigdecimal/math'
 
 def prime?(num)
   range = (2..(num/2)).to_a
@@ -15,4 +14,4 @@ def prime?(num)
   !(final_array.any? {|number| num == number})
 end
 
-
+puts Benchmark.measure {prime?(13)}
