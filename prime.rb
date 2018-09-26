@@ -1,5 +1,3 @@
-require 'benchmark'
-
 def prime?(num)
   return false if num < 0
   range = (2..Math.sqrt(num).ceil).to_a
