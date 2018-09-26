@@ -16,10 +16,11 @@ end
 
 puts Benchmark.measure {prime?(200)}
 
-# results of puts Benchmark.measure {prime?(200)}
+# results of puts Benchmark.measure {prime?(200)} for above method
 #  0.750000   0.010000   0.760000 (  0.764609)
 
-def prime_a?(num)
+
+def prime?(num)
   range = (2..(num/2)).to_a
   range.each do |x|
     range.each do |y|
@@ -30,7 +31,5 @@ def prime_a?(num)
   return true
 end
 
-puts Benchmark.measure {prime_a?(200)}
-
-# results of puts Benchmark.measure {prime?(200)}
+# results of puts Benchmark.measure {prime?(200)} for above method
 #  0.000000   0.000000   0.000000 (  0.000045)
