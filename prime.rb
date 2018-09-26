@@ -9,20 +9,23 @@ def prime?(num)
   return true
 end
 
+
 # results of puts Benchmark.measure {prime?(200)} for above method
+# 0.000000   0.000000   0.000000 (  0.000018)
 
 
-def prime_a?(num)
-  return false if num < 0
-  range = (2..(num/2)).to_a
-  range.each do |x|
-    range.each do |y|
-      product = x * y
-      return false if product == num
-    end
-  end
-  return true
-end
+
+#def prime_a?(num)
+#  return false if num < 0
+#  range = (2..(num/2)).to_a
+#  range.each do |x|
+#    range.each do |y|
+#      product = x * y
+#      return false if product == num
+#    end
+#  end
+#  return true
+#end
 
 
 # results of puts Benchmark.measure {prime?(200)} for above method
