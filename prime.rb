@@ -1,4 +1,5 @@
 def prime?(num)
+  false if num < 0
   range = (2..(num/2)).to_a
   range.each do |x|
     range.each do |y|
