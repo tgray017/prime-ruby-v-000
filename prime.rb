@@ -30,4 +30,4 @@ def prime_a?(num)
   return true
 end
 
-puts Benchmark.measure {prime_a?(100)}
+puts Benchmark.measure {prime_a?(1000)}
