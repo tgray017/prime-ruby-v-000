@@ -24,9 +24,7 @@ def prime?(num)
   range.each do |x|
     range.each do |y|
       product = x * y
-      unless final_array.any? {|z| z == product}
-        final_array << product
-      end
+      return true if product == num
     end
   end
 end
