@@ -33,4 +33,4 @@ end
 puts Benchmark.measure {prime_a?(1000)}
 
 # results of puts Benchmark.measure {prime?(100)}
-#  0.060000   0.000000   0.060000 (  0.055453)
+#  0.000000   0.000000   0.000000 (  0.000019)
