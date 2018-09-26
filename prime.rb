@@ -32,6 +32,3 @@ end
 
 # results of puts Benchmark.measure {prime?(200)} for above method
 #  0.750000   0.010000   0.760000 (  0.764609)
-
-
-
