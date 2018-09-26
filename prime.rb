@@ -1,5 +1,22 @@
 def prime?(num)
   return false if num < 0
+  range = (2..Math.sqrt(num)).to_a
+  range.each do |x|
+    range.each do |y|
+      product = x * y
+      return false if product == num
+    end
+  end
+  return true
+end
+
+
+
+
+
+
+def prime?(num)
+  return false if num < 0
   range = (2..(num/2)).to_a
   range.each do |x|
     range.each do |y|
