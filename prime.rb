@@ -12,7 +12,7 @@ def prime?(num)
       end
     end
   end
-  
+  binding.pry
   !(final_array.any? {|number| num == number})
 end
 
