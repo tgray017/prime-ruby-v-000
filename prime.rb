@@ -27,6 +27,6 @@ def prime?(num)
       return false if product == num
     end
   end
-  return false
+  return true
 end
 
