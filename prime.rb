@@ -17,4 +17,4 @@ def prime?(num)
 end
 
 
-prime?(81)
+prime?(12)
