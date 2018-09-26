@@ -14,4 +14,4 @@ def prime?(num)
   !(final_array.any? {|number| num == number})
 end
 
-puts Benchmark.measure {prime?(50)}
+puts Benchmark.measure {prime?(100)}
