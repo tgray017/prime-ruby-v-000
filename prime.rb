@@ -15,4 +15,4 @@ def prime?(num)
 end
 
 
-
+prime?(81)
